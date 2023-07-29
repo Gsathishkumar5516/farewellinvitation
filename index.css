@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url("images/bg1.jpg");
+    background-size: 100rem;
+    max-width: 2000px;
+    max-height: 100%;
+}
+.flow{
+  font-family: sans-serif fantasy;
+  font-size: 50px;
+  font-style: oblique;
+  color: #bb1a83;
+  /* font-weight: 200; */
+}
+
+/* CSS for Header */
+.header-banner  {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  }
+  .invitation{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 20px;
+    row-gap: 50px;
+  }
+  .invitation img{
+    padding: 0 100 100 100;
+  }
+   .banner{
+    height: 300px;
+    max-width: 2000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  } 
+  .font{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(237, 249, 5);
+    border:2px solid black ;
+    border-radius: 10px;
+    background-color: #40c4f0;
+    margin-top: 10px;
+  }
+  h2{
+    font-size: 20px;
+    color: #270cf4;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    position: relative;
+  }
+  
+  /* CSS for Main Section */
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .photo img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 20px;
+  }
+  
+  .video {
+    position: relative;
+    border-radius: 20px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+  }
+  
+  .video video {
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  /* CSS for Footer */
+  footer {
+    background-color: #e4e598;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .footer-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-buttons button {
+    margin: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 30px 0 30px;
+  }
+  .foot{
+    color: blue;
+  }
+  .signature {
+    margin-top: 20px;
+  }
+  
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .header-banner {
+      height: 300px;
+    }
+  
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
